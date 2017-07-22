@@ -1,0 +1,42 @@
+@charset "utf-8";
+@mixin hbPlaceholder(){
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    @content;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    @content;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    @content;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    @content;
+  }
+  //@at-root{
+  //  .ie8,.ie9{
+  //    .placeholder { /* Internet Explorer 9- */
+  //      @content;
+  //    }
+  //  }
+  //}
+}
+
+@mixin hbReplace($old-context, $new-context) {
+  @at-root #{selector-replace(&, $old-context, $new-context)} {
+    @content;
+  }
+}
+
+@mixin hbBorderHalfPx($color) {
+  background-image:
+          linear-gradient(to bottom,$color ,$color 0.5px,transparent 0.5px,transparent)
+          ,linear-gradient(to right, $color ,$color 0.5px,transparent 0.5px,transparent)
+          ,linear-gradient(to left,  $color ,$color 0.5px,transparent 0.5px,transparent)
+          ,linear-gradient(to top,   $color ,$color 0.5px,transparent 0.5px,transparent)
+}
+@mixin rgba_ie8($p:rgba(0,0,0,0.5)){
+  filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#{ie-hex-str($p)}',endColorstr='#{ie-hex-str($p)}');
+}
+@mixin linet_ie9($topcolor:#64b6eb,$bottomcolor:#1b95e1){
+  filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#{ie-hex-str($topcolor)}',endColorstr='#{ie-hex-str($bottomcolor)}');
+}

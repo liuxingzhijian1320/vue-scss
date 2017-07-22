@@ -1,0 +1,37 @@
+.cf { *zoom: 1; }
+.cf:before { content: ""; display: table; line-height: 0; }
+.cf:after { content: ""; display: table; line-height: 0; clear: both; }
+
+
+.lsn{
+  margin: 0;
+  list-style: none;
+}
+textarea{
+  .ios &{
+    @include hbPlaceholder(){
+      text-indent: -0.5px;
+    }
+  }
+}
+
+.form-control{
+  .ios &{
+    -webkit-appearance: none;
+  }
+}
+
+.without-number-spin{
+  &[type=number]{
+    &::-webkit-inner-spin-button,&::-webkit-outer-spin-button{
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+body{
+  font-family:$ff_chs;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:$ff_chs_h;
+}

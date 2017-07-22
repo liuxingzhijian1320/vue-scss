@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* RESET */
+$breakpoints: (
+        'ip5':  320px,
+        'mi4':  360px,
+        'ip6':  375px,
+        'ip6p':  414px,
+        'laptop':  1360px,
+        'sm':  768px,
+        'md':  992px,
+        'lg':  1200px
+) !default;
+$media-expressions: (
+        'screen': 'screen',
+        'print': 'print',
+        'handheld': 'handheld',
+        'landscape': '(orientation: landscape)',
+        'portrait': '(orientation: portrait)',
+        'retina2x': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)',
+        'retina3x': '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi)'
+) !default;
+
+
+@import 'lib/include-media/dist/include-media';
+@import 'lib/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import 'lib/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+
+
+
+$mainColor:#05cd76;
+
+$pictureMainColor:#b08dfd;
+$companyMainColor:#5C9CF6;
+$caseMainColor:#f3903e;
+$topicMainColor:#f3903e;
+$hotelMainColor:#ff5050;
+$mainTextColor:#666666;
+$auxiliaryTextColor:#999999;
+$itemShadow: 0px 0px 20px rgba(104,104,104,0.2);
+$ff_chs: Arial,Verdana,Tahoma,'Hiragino Sans GB',Microsoft YaHei,SimSun,sans-serif;
+$ff_chs_h: Arial,Verdana,Tahoma,'Hiragino Sans GB',Microsoft YaHei,SimHei,SimSun,sans-serif;
+@import "hbMixin";
+
+
+%cf { *zoom: 1; }
+%cf:before { content: ""; display: table; line-height: 0; }
+%cf:after { content: ""; display: table; line-height: 0; clear: both; }
+
+%removeButtonOutline{
+  &:active,&:focus{
+    outline: none;
+  }
+}
