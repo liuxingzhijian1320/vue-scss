@@ -19,13 +19,13 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
+```
 # scss config check url
 http://blog.csdn.net/zhooson/article/details/63682280
 
 # favicons-webpack-plugin config check url
 http://blog.csdn.net/zhooson/article/details/70336246
 
-#ip config check url
+# ip config check url
 http://blog.csdn.net/zhooson/article/details/74389211
-
+```
