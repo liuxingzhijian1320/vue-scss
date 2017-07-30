@@ -1,6 +1,9 @@
 
 
-> A vue-scss-ip project
+> A vue-scss-ip template
+### 本模板功能包括：scss语编译，本机的ip显示，rem布局
+
+[DEMO](http://www.zhooson.cn/vuescss/#/)
 
 ## Build Setup
 
