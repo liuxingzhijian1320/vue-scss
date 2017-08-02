@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class='demo'>sdasdasd</div>
+    <div class='demo'>我是scss编译出来的语法</div>
   </div>
 </template>
 
