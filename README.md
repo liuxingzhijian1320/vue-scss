@@ -5,11 +5,19 @@
 
 [DEMO](http://www.zhooson.cn/vuescss/#/)
 
+
 ## Build Setup
+
+## 初始化项目
+vue init webpack vue-scss 
 
 ``` bash
 # install dependencies
 npm install
+
+# laoder
+官方脚手架将scss的loader配置的好了，只需要npm install node-sass sass-laoder -D
+不向之前的那么麻烦了
 
 # serve with hot reload at localhost:8080
 npm run dev
