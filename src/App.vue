@@ -22,6 +22,13 @@ export default {
 </script>
 
 <style lang='scss'>
+
+  @import './assets/style/normalize.scss';
+  @import './assets/style/reset.scss';
+  @import './assets/style/mixin.scss';
+  @import './assets/style/func.css';
+
+
   body {
     font-size:0.28rem;/*设置主体的字体大小*/
   }
@@ -31,4 +38,8 @@ export default {
     color:red;  /*scss的语法*/
    }
 }
+
+
+
+
 </style>
